@@ -57,8 +57,8 @@ const ItemPage = ({ data, setItemOpen, itemOpen }) => {
             </animated.nav>
             <div>
                 <animated.h1 style={Animate(1)}>{itemOpen?data.header:''}</animated.h1>
-                <animated.div className="content-preview" style={Animate(2)}>{video}</animated.div>
-                <animated.p style={Animate(3)}>{itemOpen?data.content:''}</animated.p>
+                <animated.div className="content-preview" style={Animate(2)}>{itemOpen?video:null}</animated.div>
+                <animated.p style={Animate(3)}>{itemOpen?data.content.join("\n"):''}</animated.p>
                 <animated.button style={Animate(4)} onClick={() => SourceOpen()}>Link to Resource</animated.button>
             </div>
         </animated.section>
