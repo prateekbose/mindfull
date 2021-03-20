@@ -20,46 +20,41 @@ const Page = ({ pages, page }) => {
     const data = [
         {
             header: "5 minute meditation you can do anywhere",
-            image: "./landing.jpg",
+            image: "https://img.youtube.com/vi/inpok4MKVLM/0.jpg",
             type: "video",
             url: "https://www.youtube.com/embed/inpok4MKVLM",
-            elem: <iframe src="https://www.youtube.com/embed/inpok4MKVLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
             content: ["In just 5 minutes you can reset your day in a positive way."],
             source: "https://www.youtube.com/watch?v=inpok4MKVLM"
         },
         {
             header: "5 minute meditation you can do anywhere",
-            image: "./landing.jpg",
+            image: "https://img.youtube.com/vi/inpok4MKVLM/0.jpg",
             type: "video",
             url: "https://www.youtube.com/embed/inpok4MKVLM",
-            elem: <iframe src="https://www.youtube.com/embed/inpok4MKVLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
             content: ["In just 5 minutes you can reset your day in a positive way."],
             source: "https://www.youtube.com/watch?v=inpok4MKVLM"
         },
         {
             header: "5 minute meditation you can do anywhere",
-            image: "./landing.jpg",
+            image: "https://img.youtube.com/vi/inpok4MKVLM/0.jpg",
             type: "video",
             url: "https://www.youtube.com/embed/inpok4MKVLM",
-            elem: <iframe src="https://www.youtube.com/embed/inpok4MKVLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
             content: ["In just 5 minutes you can reset your day in a positive way."],
             source: "https://www.youtube.com/watch?v=inpok4MKVLM"
         },
         {
             header: "5 minute meditation you can do anywhere",
-            image: "./landing.jpg",
+            image: "https://img.youtube.com/vi/inpok4MKVLM/0.jpg",
             type: "video",
             url: "https://www.youtube.com/embed/inpok4MKVLM",
-            elem: <iframe src="https://www.youtube.com/embed/inpok4MKVLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
             content: ["In just 5 minutes you can reset your day in a positive way."],
             source: "https://www.youtube.com/watch?v=inpok4MKVLM"
         },
         {
             header: "5 minute meditation you can do anywhere",
-            image: "./landing.jpg",
+            image: "https://img.youtube.com/vi/inpok4MKVLM/0.jpg",
             type: "video",
             url: "https://www.youtube.com/embed/inpok4MKVLM",
-            elem: <iframe src="https://www.youtube.com/embed/inpok4MKVLM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
             content: ["In just 5 minutes you can reset your day in a positive way."],
             source: "https://www.youtube.com/watch?v=inpok4MKVLM"
         },

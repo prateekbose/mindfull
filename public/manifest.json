@@ -24,6 +24,6 @@
   "background_color": "#ffffff",
   "url": "https://mindfullweb.vercel.app/",
   "manifestUrl": "https://mindfullweb.vercel.app/manifest.json",
-  "lang": "en",
+  "lang": "",
   "screenshots": []
 }

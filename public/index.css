@@ -153,10 +153,12 @@ nav ul .active{
   font-size: 2rem;
   color: #202020;
   height: 5rem;
-  width: 20rem;
+  width: 30rem;
+  font-weight: 500;
   border: thin solid #ffffff;
   background-color: #ffffff;
   transition: 0.3s ease;
+  text-transform: uppercase;
 }
 
 .landing .content button:hover{
