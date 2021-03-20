@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, lazy, Suspense } from 'react'
 import ItemCard from "./ItemCard/itemCard"
-import ItemPage from './itemPage'
 import NavBar from "./NavBar/nav"
+const ItemPage = lazy(() => import('./itemPage'))
 
 const Page = ({ pages, page }) => {
     
@@ -85,7 +85,9 @@ const Page = ({ pages, page }) => {
                 ))}
             </div>
         </section>,
-        <ItemPage data={itemData} setItemOpen={setItemOpen} itemOpen={itemOpen}/>
+        <Suspense fallback={<div></div>}>
+            <ItemPage data={itemData} setItemOpen={setItemOpen} itemOpen={itemOpen}/>
+        </Suspense>
     ]
 }
 
