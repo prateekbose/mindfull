@@ -1,0 +1,343 @@
+*{
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+*:focus{
+  outline: none;
+}
+
+::-webkit-scrollbar{
+  background-color: #202020;
+  width: 0.5rem;
+}
+
+@media only screen and (max-width: 768px){
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #ffffff;
+}
+
+html{
+  font-size: 10px;
+  background-color: #202020;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media only screen and (min-width: 1920px){
+  html{
+    font-size: 11px;
+  }
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (max-width: 768px){
+  nav{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+}
+
+nav > h1{
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px){
+  nav > h1{
+    font-size: 1.75rem;
+  }
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 4rem;
+}
+
+@media only screen and (max-width: 768px){
+  nav ul{
+    /* flex-wrap: wrap;
+    gap: 0.25rem 0.5rem; */
+    gap: 0rem 0.5rem;
+    flex-wrap: wrap;
+  }
+}
+
+nav ul li{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.5);
+  transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 768px){
+  nav ul li{
+    font-size: 3rem;
+  }
+}
+
+nav ul li:hover{
+  color: rgba(255,255,255,1);
+  cursor: pointer;
+}
+
+nav ul .active{
+  color: rgba(255,255,255,1);
+}
+
+.landing{
+  background: url('./landing.jpg'), rgba(0,0,0,0.3);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing > h1{
+  position: fixed;
+  top: 5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px){
+  .landing > h1{
+    font-size: 2.5rem;
+    top: 2.5rem;
+  }
+}
+
+.landing .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.landing .content .header h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 5.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+  .landing .content .header h1{
+    font-size: 5rem;
+  }
+}
+
+.landing .content button{
+  font-size: 2rem;
+  color: #202020;
+  height: 5rem;
+  width: 20rem;
+  border: thin solid #ffffff;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+
+.landing .content button:hover{
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+  .landing .content button{
+    position: fixed;
+    bottom: 2.5rem;
+    font-size: 2.25rem;
+    background-color: transparent;
+    color: #ffffff;
+    width: calc(100vw - 5rem);
+    height: 7.5rem;
+  }
+}
+
+.page{
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px){
+  .page{
+    gap: 1rem;
+  }
+}
+
+.page > h1{
+  font-size: 7.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px){
+  .page > h1{
+    display: none;
+  }
+}
+
+.page .page-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.5rem 2rem;
+}
+
+@media only screen and (max-width: 768px){
+  .page .page-content{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 1920px){
+  .page .page-content{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.page .page-card{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.page .page-card h1{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+}
+
+.page .page-card .page-card-image{
+  padding: 1rem;
+  height: 29rem;
+  background: url('./landing.jpg'), rgba(0,0,0,0.3);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+  transition: 0.3s ease;
+}
+
+.page .page-card:hover{
+  cursor: pointer;
+}
+
+.page .page-card:hover .page-card-image{
+  background-color: rgba(0,0,0,0.5);
+}
+
+@media only screen and (max-width: 768px){
+  .page .page-card .page-card-image{
+    height: 19rem;
+  }
+}
+
+.item{
+  position: absolute;
+  background-color: #202020;
+  top: 0;
+  padding: 2.5rem;
+  width: calc(99vw - 5rem);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.item nav h1:hover{
+  cursor: pointer;
+}
+
+.item div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item div h1{
+  font-size: 6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px){
+  .item div h1{
+    font-size: 2.5rem;
+  }
+}
+
+.item div .content-preview{
+  height: 90vh;
+  width: 100%;
+  background-image: url('./landing.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 768px){
+  .item div .content-preview{
+    height: 50vh;
+  }
+}
+
+.item div p{
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.item div button{
+  width: 30rem;
+  height: 4rem;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border: thin solid #ffffff;
+  color: #202020;
+  background-color: #ffffff;
+  transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 768px){
+  .item div button{
+    width: 100%;
+  }
+}
+
+.item div button:hover{
+  background-color: #202020;
+  color: #ffffff;
+}
+
+.item iframe{
+  height: 100%;
+  width: 100%;
+}
