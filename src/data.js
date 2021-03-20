@@ -69,19 +69,33 @@ const data = {
     ],
     "moods": [
         {
-            "header": "Want to be happy? Be grateful",
-            "image": "https://img.youtube.com/vi/UtBsl3j0YRQ/0.jpg",
+            "header": "How to get rid of loneliness and become happy",
+            "image": "https://img.youtube.com/vi/vZT-bB66iIk/0.jpg",
             "type": "video",
-            "url": "https://www.youtube.com/embed/UtBsl3j0YRQ",
-            "content": ["The one thing all humans have in common is that each of us wants to be happy, says Brother David Steindl-Rast, a monk and interfaith scholar. And happiness, he suggests, is born from gratitude. An inspiring lesson in slowing down, looking where you're going, and above all, being grateful."],
-            "source": "https://www.youtube.com/watch?v=UtBsl3j0YRQ"
+            "url": "https://www.youtube.com/embed/vZT-bB66iIk",
+            "content": ["About one in three adults suffer from loneliness. It can increase your risk of depression and early death, and it can affect your immune system. Loneliness is silent and contagious, but it can be overcome. In her talk, Olivia will share her insights on loneliness and how to beat it."],
+            "source": "https://www.youtube.com/watch?v=vZT-bB66iIk"
         },{
-            "header": "Gratitude Meditation",
-            "image": "https://img.youtube.com/vi/xfD4HaBBc0I/0.jpg",
+            "header": "4 Reason Why You Feel Empty",
+            "image": "https://img.youtube.com/vi/_by5mfkBni4/0.jpg",
             "type": "video",
-            "url": "https://www.youtube.com/embed/xfD4HaBBc0I",
-            "content": ["Raise your vibration in mere minutes with this beautiful Gratitude Meditation - a powerful series of gratitude affirmations carefully-crafted to help you to manifest the life of your dreams. Listen to this EVERY DAY for 21 DAYS and you will see your world transform!"],
-            "source": "https://www.youtube.com/watch?v=xfD4HaBBc0I"
+            "url": "https://www.youtube.com/embed/_by5mfkBni4",
+            "content": ["Do you feel empty or lonely? Are you feeling lost in life? Are you dealing with loneliness? Feeling like no matter how hard you try in life, you are still not going anywhere. If you’re feeling empty, you’re not alone. Emptiness can come from many things such feeling lost in life, having depression, not doing emptiness meditation, not surrounding yourself with people who understands. The list goes on. What makes you feel lonely? Comment below. If you enjoy this video and you resonate with these signs of loneliness, considering sharing it."],
+            "source": "https://www.youtube.com/watch?v=_by5mfkBni4"
+        },{
+            "header": "8 Signs You're Emotionally Numb",
+            "image": "https://img.youtube.com/vi/k3cflxGTsn4/0.jpg",
+            "type": "video",
+            "url": "https://www.youtube.com/embed/k3cflxGTsn4",
+            "content": ["Are you emotionally numb? Do you feel depressed, empty, and lose interest in the things you used to enjoy? Emotional numbness is when you lose the ability to feel or express your emotions, which is also known as anhedonia. Anhedonia, is in fact,  one of the many symptoms of depression. Numbness can grow and worsen over time, so here are eight signs that you are emotionally numb."],
+            "source": "https://www.youtube.com/watch?v=k3cflxGTsn4"
+        },{
+            "header": "7 Things To Avoid When Depressed",
+            "image": "https://img.youtube.com/vi/lHYo8YvhgkM/0.jpg",
+            "type": "video",
+            "url": "https://www.youtube.com/embed/lHYo8YvhgkM",
+            "content": ["Depression is associated with persistently negative feelings, significantly affecting your thoughts and behaviour. It’s important to educate yourself on matters of depression, to sift through the misconceptions and avoid doing anything that might worsen the symptoms for you or those around you."],
+            "source": "https://www.youtube.com/watch?v=lHYo8YvhgkM"
         },
     ],
 }
