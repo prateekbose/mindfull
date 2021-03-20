@@ -19,6 +19,7 @@ const ItemCard = ({ data, index, page, setItemData, setItemOpen }) => {
     const ClickHandle = () => {
         setItemOpen(true)
         setItemData(data)
+        window.scroll(0,0)
     }
 
     return (
