@@ -5,9 +5,13 @@ import data from '../data'
 const ItemPage = lazy(() => import('./itemPage'))
 
 const Page = ({ pages, page }) => {
-    
-  const [itemOpen, setItemOpen] = useState(false)
-  const [itemData, setItemData] = useState([])
+
+    const [itemOpen, setItemOpen] = useState(false)
+    const [itemData, setItemData] = useState([])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [itemOpen])
 
     // const data = [
     //     {
@@ -52,20 +56,20 @@ const Page = ({ pages, page }) => {
     //     },
     // ]
 
-    const style={
+    const style = {
         overflow: 'hidden'
     }
 
     return [
-        <section className="page" style={(itemOpen)?style:null}>
-            <NavBar pages={pages} page={page}/>
+        <section className={`page ${itemOpen ? 'page-open' : ''}`} style={(itemOpen) ? style : null}>
+            <NavBar pages={pages} page={page} />
             <h1>{page}</h1>
             <div className="page-content">
                 {data[page].map((item, index) => (
                     <ItemCard
-                        data = {item}
-                        index = {index}
-                        page = {page}
+                        data={item}
+                        index={index}
+                        page={page}
                         setItemData={setItemData}
                         setItemOpen={setItemOpen}
                     />
@@ -73,7 +77,7 @@ const Page = ({ pages, page }) => {
             </div>
         </section>,
         <Suspense fallback={<div></div>}>
-            <ItemPage data={itemData} setItemOpen={setItemOpen} itemOpen={itemOpen}/>
+            <ItemPage data={itemData} setItemOpen={setItemOpen} itemOpen={itemOpen} />
         </Suspense>
     ]
 }
